@@ -40,6 +40,8 @@ class Embarked(Feature):
 class Fare(Feature):
     def create_features(self):
         data = train.append(test)
+        # ChatGPT's suggestion: replace the line above with the one below
+        # data = pd.concat([train, test], ignore_index=True)
         fare_mean = data['Fare'].mean()
         self.train['Fare'] = pd.qcut(
             train['Fare'].fillna(fare_mean),
