@@ -1,2 +1,2 @@
 # titanic_kaggle
-Kaggle Titanic
+Learning how to structure project using Kaggle Titanic
